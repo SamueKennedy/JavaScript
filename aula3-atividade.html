@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3 - Estrutura Condicional - Atividade</title>
+</head>
+<body>
+<h1>Estrutura Condicional em JavaScript</h1>
+<p>Criar um algoritmo em JavaScript que solicita do usuário seu nome
+    e o ano de nascimento.Com as informações calcule sua idade e exiba na 
+    tela do corpo do HTML a mensagem:"Olá Usuário,você tem X anos e pode dirigir", caso
+    contrário não pode dirigir
+</p>
+    <hr>
+    <script>
+        let nome = String(prompt("Insira seu nome"));
+        let ano = parseInt(prompt("Insira seu ano de nascimento"));
+
+        let idade = 2024 - ano
+        if (idade >= 18){
+            document.write("Olá " + nome + ", você tem " + idade + " anos e pode dirigir")
+        }
+        else{
+            document.write("Olá " + nome + ", você tem " + idade + " anos e não pode dirigir")
+        }
+
+        
+
+    </script>
+</body>
+</html>
